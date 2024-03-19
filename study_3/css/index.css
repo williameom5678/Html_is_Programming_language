@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+.youtube{
+    position: relative;
+    margin: 0 auto;
+}
+
+.youtube .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
