@@ -7,6 +7,11 @@ body {
     margin: 0 auto;
 }
 
+.twitter{
+    position: relative;
+    margin: 0 auto;
+}
+
 .youtube .inner {
     position: absolute;
     left: 0;
@@ -15,4 +20,11 @@ body {
     padding-top: center;
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.twitter .inner_{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
 }
