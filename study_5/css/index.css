@@ -1,0 +1,17 @@
+.content1{
+    background-color: red;
+    width: 800px;
+    height: 600px;
+}
+
+.content2{
+    background-color: green;
+    width: 1024px;
+    height: 768px;
+}
+
+.content3{
+    background-color: blue;
+    width: 1280px;
+    height: 1024px;
+}
