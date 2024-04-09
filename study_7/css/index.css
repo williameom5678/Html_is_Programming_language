@@ -1,3 +1,6 @@
+
+@import url();
+
 body {
     margin: 0;
     height: 100%;
@@ -5,6 +8,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: "UntitledTTF", normal;
+    src: url(https://williameom.xyz/fonts/new_subway.ttf);
+    font-size: 20px;
 }
 
 .button_container {
@@ -29,7 +35,7 @@ body {
     position: relative;
     color: #fff;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #222;
     padding: 17px 60px;
     margin: 0 auto;
@@ -37,5 +43,25 @@ body {
 }
 
 .btn a {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: px;
+}
 
+.btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 300px;
+    background: #a61b6a;
+    transition: all .5s ease-in-out;
+    transform: rotate(180deg);
+    transform: translate(-98%) rotate(180deg);
+}
+
+.btn:hover::after {
+    transform: rotate(180deg);
 }
