@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <title>Test8.exe</title>
+</head>
+<body>
+    <h3>cite Tag</h3>
+    <img src="./img/DEL_7375.jpg" alt="Korail 7300 Class DEL 7375" width="50%" height="50%">
+    <p><cite>캐논 FTb QL</cite></p>
+
+    <h3>Code Tag</h3>
+    <p>ELF Header made from NASM Linux i386 Assembly.</p>
+<code>[BITS 32]</code>
+<code></code>
+<code>org 0x08048000</code>
+<code></code>
+<code>ehdr:						                 ; elf32_ehdr</code>
+<code>db 0x7F, "ELF", 1, 1, 1, 0			 ; e_ident</code>
+<code>times 8 db 0</code>
+<code>dw 2				                 ; e_type</code>
+<code>dw 3				                 ; e_machine</code>
+<code>dd 1				                 ; e_version</code>
+<code>dd _start			                 ; e_entry</code>
+<code>dd phdr - $$			           	 ; e_phoff</code>
+<code>dd 0				                 ; e_shoff</code>
+<code>dd 0 				                 ; e_flags</code>
+<code>dw ehdrsize			                 ; e_ehsize</code>
+<code>dw phdrsize			                 ; e_phentsize</code>
+<code>dw 1				                 ; e_phnum</code>
+<code>dw 0				                 ; e_shentsize</code>
+<code>dw 0				                 ; e_shnum</code>
+<code>dw 0				                 ; e_shstrndx</code>
+</code></code>
+<code>ehdrsize 	equ $ - ehdr</code>
+<code></code>
+<code>phdr:						                 ; elf32_Phdr</code>
+<code>dd 1				                 ; p_type</code>
+<code>dd 0				                 ; p_offset</code>
+<code>dd $$				                 ; p_vaddr</code>
+<code>dd $$				                 ; p_paddr</code>
+<code>dd filesize			                 ; p_filesz</code>
+<code>dd filesize			                 ; p_memsz</code>
+<code>dd 5				                 ; p_flags</code>
+<code>dd 0x1000			                 ; p_align</code>
+<code></code>
+<code>phdrsize	equ $ - phdr</code>
+<code></code>
+<code>msg db "Hello World", 0x0A</code>
+<code>len equ $ - msg</code>
+<code>_start:</code>
+<code>mov eax, 4</code>
+<code>mov ebx, 1</code>
+<code>mov ecx, msg</code>
+<code>mov edx, len</code>
+<code>int 0x80</code>
+<code></code>
+<code>mov eax, 1</code>
+<code>mov ebx, 0</code>
+<code>int 0x80</code>
+<code></code>
+<code>filesize	equ $ - $$	</code>
+
+<h3>dfn Tag</h3>
+<p><dfn title="Word Wide Web">W3C</dfn>는 월드 와이드 웹을 위한 표준을 정하는 기관입니다.</p>
+
+<h3>kbd Tag</h3>
+<kbd>ctrl</kbd>키와 <kbd>alt</kbd>키 그리고 <kbd>s</kbd>키를 차례로 누르면 전체 저장 ㄱㄴ.
+
+<h3>label Tag</h3>
+<form action="">
+    <input type="radio" name="ages" id="teen" value="shitdae"/>
+    <label for="teen">10대</label><br>
+    <input type="radio" name="ages" id="twenty" value="yeeshitdae"/>
+    <label for="twenty">20대</label><br>
+    <input type="radio" name="ages" id="thirty" value="samshitdae"/>
+    <label for="thirty">30대</label><br>
+    <input type="radio" name="ages" id="fourty" value="sashitdae"/>
+    <label for="fourty">40대</label><br>
+    <input type="submit">
+</form>
+
+<h3>select Tag</h3>
+<select>
+    <option value="ROK">Republic Of Korea</option>
+    <option value="PRC">Republic Of China</option>
+    <option value="JPN">Japan</option>
+    <option value="USA">United States of America</option>
+    <option value="CHN">People's Republic Of China</option>
+    <option value="GER">Bundesrepublik Deutschland</option>
+</select>
+
+<h3>span Tag</h3>
+<p>오늘 나는 학교에 와서 <span style="color: red;">굥부를</span> 했습니다.</p>
+
+<h3>output</h3>
+<form oninput="result.value=parseInt(a.value) / parseInt(b.value)">
+    first num: <input type="number" name="a" id="a" value="0"> /
+    second num: <input type="number" name="b" id="b" value="0"> =
+    <output name="result" for="a b">0</output>
+</form>
+</body>
+</html>
