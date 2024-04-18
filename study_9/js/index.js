@@ -9,6 +9,7 @@ const updateClock = () => {
     var hr = now.getHours();
     var min = now.getMinutes();
     var sec = now.getSeconds();
+    var mlSec = now.getMilliseconds();
 
     //var hr_ = (hr < 10) ? '0' + hr : hr;
     var min_ = (min < 10) ? '0' + min : min;
@@ -20,7 +21,7 @@ const updateClock = () => {
     }
 
     var clock = document.getElementById('clock');
-    clock.textContent = yr + "년 " + mo + "월 " + dy + "일 (" + dTe + ")\n\n"+ apm + " "+ hr_ + ':' + min_ + ':' + sec_;
+    clock.textContent = yr + "년 " + mo + "월 " + dy + "일 (" + dTe + ")\n\n"+ apm + " "+ hr_ + ':' + min_ + ':' + sec_ + '.' + mlSec;
 };
 
-setInterval(updateClock, 100);
+setInterval(updateClock, 1);
