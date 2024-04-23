@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button oneclick="appendNumber('1');">1</button>
+            <button oneclick="appendNumber('2');">2</button>
+            <button oneclick="appendNumber('3');">3</button>
+            <button oneclick="performOperation('+');">+</button>
+            <button oneclick="appendNumber('4');">4</button>
+            <button oneclick="appendNumber('5');">5</button>
+            <button oneclick="appendNumber('6');">6</button>
+            <button oneclick="performOperation('-');">-</button>
+            <button oneclick="appendNumber('7');">7</button>
+            <button oneclick="appendNumber('8');">8</button>
+            <button oneclick="appendNumber('9');">9</button>
+            <button oneclick="performOperation('*');">×</button>
+            <button oneclick="appendNumber('0');">0</button>
+            <button oneclick="clearDisplay();">C</button>
+            <button oneclick="calculateResult();">=</button>
+            <button oneclick="performOperation('/');">÷</button>
+        </div>
+    </div>
+</body>
+</html>
