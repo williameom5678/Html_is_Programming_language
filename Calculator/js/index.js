@@ -1,18 +1,34 @@
-var display = document.getElementById('display');
+const display = document.getElementById('display');
 
-var appendNumber = (number) => {
+const appendNumber = (number) => {
     display.value += number;
 };
 
-var performOperation = (operator) => {
+const performOperation = (operator) => {
+    /*switch(operator) {
+        case "+":
+            display.value += "+"
+            break;
+        case "-":
+            display.value += "-"
+            break;
+        case "*":
+            display.value += "×"
+            break;
+        case "/":
+            display.value += "÷"
+            break;
+        default:
+            break;
+    }*/
     display.value += operator;
 };
 
-var clearDisplay = () => {
+const clearDisplay = () => {
     display.value = '';
 };
 
-var calculateResult = () => {
+const calculateResult = () => {
     try {
         display.value = eval(display.value);
     } catch (e) {
