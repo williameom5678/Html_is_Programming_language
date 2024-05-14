@@ -1,0 +1,13 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* namjakkly saesaeaxe */
