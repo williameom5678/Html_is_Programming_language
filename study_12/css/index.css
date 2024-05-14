@@ -10,4 +10,23 @@ body {
     height: 100vh;
 }
 
-/* namjakkly saesaeaxe */
+/* geebon */
+.contain .inner {
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Logo */
+.contain .logo {
+    margin-top: 5%;
+}
+
+.contain .logo img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
