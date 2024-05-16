@@ -30,3 +30,40 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.contain .inner .pokemon {
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/ball.png");
+    background-size: contain;
+    margin: 30px;
+}
+
+.contain .inner .pokemon .imgs {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 80px;
+}
+
+.contain .inner .pokemon:hover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contain .pokemon:nth-child(1):hover{background-image: url("../img/pokemon_1.png");}
+.contain .pokemon:nth-child(2):hover{background-image: url("../img/pokemon_2.png");}
+.contain .pokemon:nth-child(3):hover{background-image: url("../img/pokemon_3.png");}
+.contain .pokemon:nth-child(4):hover{background-image: url("../img/pokemon_4.png");}
+.contain .pokemon:nth-child(5):hover{background-image: url("../img/pokemon_5.png");}
+.contain .pokemon:nth-child(6):hover{background-image: url("../img/pokemon_6.png");}
+.contain .pokemon:nth-child(7):hover{background-image: url("../img/pokemon_7.png");}
+.contain .pokemon:nth-child(8):hover{background-image: url("../img/pokemon_8.png");}
+.contain .pokemon:nth-child(9):hover{background-image: url("../img/pokemon_9.png");}
+.contain .pokemon:nth-child(10):hover{background-image: url("../img/pokemon_10.png");}
+.contain .pokemon:nth-child(11):hover{background-image: url("../img/pokemon_11.png");}
+.contain .pokemon:nth-child(12):hover{background-image: url("../img/pokemon_12.png");}
+.contain .pokemon:nth-child(13):hover{background-image: url("../img/pokemon_13.png");}
+.contain .pokemon:nth-child(14):hover{background-image: url("../img/pokemon_14.png");}
+.contain .pokemon:nth-child(15):hover{background-image: url("../img/pokemon_15.png");}
