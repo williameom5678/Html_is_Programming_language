@@ -20,6 +20,55 @@ body {
     padding: 40px 20px;
 }
 
+/* clouds */
+.contain .cloud {
+    position: absolute;
+    z-index: -20;
+}
+
+/* cloud1 */
+.contain .cloud:nth-child(1) {
+    left: -300px;
+    animation: 300s ease-in 1s infinite reverse both running cloud1;
+}
+
+@keyframes cloud1 {
+    from {
+        transform: translateX(250vh);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+/* cloud2 */
+.contain .cloud:nth-child(2) {
+    right: -700px;
+    animation: 150s ease-in 1s infinite reverse both running cloud2;
+}
+
+@keyframes cloud2 {
+    from {
+        transform: translateX(-250vh);
+    } to {
+        transform: translateX(0);
+    }
+}
+
+/* cloud3 */
+.contain .cloud:nth-child(3) {
+    top: 500px;
+    left: 100px;
+    animation: 75s ease-in 1s infinite reverse both running cloud3;
+}
+
+@keyframes cloud3 {
+    from {
+        transform: translateX(-250vh);
+    } to {
+        transform: translateX(0);
+    }
+}
+
 /* Logo */
 .contain .logo {
     margin-top: 5%;
