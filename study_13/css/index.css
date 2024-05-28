@@ -1,5 +1,27 @@
-.swiper {
+/*.swiper {
     width: 600px;
     height: 300px;
-  }
-  
+}*/
+
+swiper img {   
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+}
+
+.swiper swiper-pagination {
+  bottom: 30px;
+}
+
+/* button 색상 위치 변경 */
+.swiper .swiper-button-prev {
+  color: #ffffff;
+  left: 50px;
+}
+
+.swiper .swiper-button-next {
+  color: #ffffff;
+  right: 50px;
+}
