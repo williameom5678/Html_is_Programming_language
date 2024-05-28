@@ -1,0 +1,11 @@
+.contain {
+    width: 800px;
+    background-color: aqua;
+    font-size: 40px;
+    color: #fff;
+}
+
+.contain .item {
+    border: 4px dashed #fff;
+    background-color: blueviolet;
+}
