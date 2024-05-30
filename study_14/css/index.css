@@ -1,11 +1,72 @@
+body {
+    height: 3000px;
+}
 .contain {
     width: 800px;
     background-color: aqua;
     font-size: 40px;
     color: #fff;
+    position: relative;
 }
 
 .contain .item {
     border: 4px dashed #fff;
     background-color: blueviolet;
+}
+
+.contain .item:nth-child(1) {
+    width: 100px;
+    height: 200px;
+}
+.contain .item:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 200px;
+    bottom: 20px;
+}
+.contain .item:nth-child(3) {
+    width: 150px;
+    height: 100px;
+}
+
+.wrap {
+    width: 500px;
+    height: 400px;
+    background-color: greenyellow;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.mom {
+    width: 500px;
+    height: 400px;
+    background-color: orange;
+    position: relative;
+}
+
+.wrap .mom .son {
+    background-color: yellow;
+    border: 4px dotted #000;
+}
+
+.wrap .mom .son:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.wrap .mom .son:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+.wrap .mom .son:nth-child(3) {
+    width: 100px;
+    height: 150px;
+    position: sticky;
+    left: 100px;
+    top: 50px;
 }
