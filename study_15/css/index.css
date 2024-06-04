@@ -1,0 +1,57 @@
+/* absolute 중정 */
+.contain {
+    width: 400px;
+    height: 250px;
+    background-color: #006660;
+    position: relative;
+}
+
+.contain .rem {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+span {
+    width: 1200px;
+    height: 800px;
+    background-color: #066600;
+    font-size: 500px;
+    position: absolute;
+    z-index: 0;
+}
+
+.z_container {
+    width: 600px;
+    height: 400px;
+    background-color: #006660;
+    font-size: 40px;
+}
+
+.z_container .z_item {
+    border: 4px solid #000000;
+    background-color: pink;
+}
+
+.z_container .z_item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+}
+.z_container .z_item:nth-child(2) {
+    width: 150px;
+    height: 100px;
+}
+.z_container .z_item:nth-child(3) {
+    width: 200px;
+    height: 100px;
+}
