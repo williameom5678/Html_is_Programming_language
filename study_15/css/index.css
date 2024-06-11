@@ -55,3 +55,51 @@ span {
     width: 200px;
     height: 100px;
 }
+
+
+/* flex direction */
+
+.direction_container {
+    width: 800px;
+    height: 800px;
+    background-color: #006660;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+.direction_container .direction_item {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #000000;
+    background-color: aquamarine;
+}
+
+/* flex wrap */
+.wrap_container {
+    background-color: green;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap_container .wrap_item {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+}
+
+/* justify content */
+.justi_container {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.justi_container .justi_item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: azure;
+}
