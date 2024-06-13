@@ -103,3 +103,37 @@ span {
     margin: 10px;
     background-color: azure;
 }
+
+/* align_content */
+.align_container {
+    width: 800px;
+    height: 800px;
+    background-color: #006660;
+    display: flex;
+    flex-wrap: flex-start;
+    align-content: center;
+}
+
+.align_container .align_item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #000000;
+}
+
+/* align_items */
+.align_items {
+    width: 800px;
+    height: 800px;
+    background-color: #006660;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align_items .align_item {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    margin: 10px;
+}
