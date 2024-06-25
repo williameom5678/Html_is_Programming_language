@@ -11,4 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", function() {
         navLinks.classList.toggle("show");
     });
+
+    // Slide
+    document.querySelectorAll("header .inner ul li a").forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttibute("href").substring(1);
+        });
+    });
 });
