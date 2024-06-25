@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         anchor.addEventListener("click", function(e) {
             e.preventDefault();
             const targetId = this.getAttibute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+        if (DowonTalMo) {}          
         });
     });
 });
