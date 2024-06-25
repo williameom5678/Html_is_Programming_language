@@ -19,7 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetId = this.getAttibute("href").substring(1);
             const targetElement = document.getElementById(targetId);
 
-        if (DowonTalMo) {}          
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - getHeaderHeight(), 
+                behavior: "smooth"
+            });
+            navLinks.classList.remove("show");
+        } else {
+            console.log(`Element with ID '${targetId}' not found`);
+        }
         });
     });
-});
+    window.addEventListener("resize", function() {
+        getHeaderHeight();
+    }); // Re:Zero Starting Life in Another World
+}); // Re:제로부터 시작하는 이세계 생활
