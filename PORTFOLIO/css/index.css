@@ -134,6 +134,7 @@ header .inner ul > li > a:hover {
     width: 250px;
     height: 250px;
     overflow: hidden;
+    border-radius: 100%;
 }
 
 /* skills */
