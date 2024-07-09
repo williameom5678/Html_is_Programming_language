@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded",function(){
     const header = document.querySelector("header");
     const navLinks = document.getElementById("nav-links");
     const menuToggle = document.getElementById("menu-toggle");
+    const skillsSection = doucment.querySelector("#skills");
+    let observer;
 
     function getHeaderHeight(){
         return header.offsetHeight;
@@ -70,5 +72,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
     window.addEventListener("resize", function(){
         getHeaderHeight();
-    });
-});
+     }); // Re:Zero Starting Life in Another World
+ }); // Re:제로부터 시작하는 이세계 생활
+// Re:ゼロから始める異世界生活
