@@ -1,3 +1,4 @@
+const Ndebug = true;
 // 모바일_toggle
 // document.addEventListener("DOMContentLoaded", function() {
 //     const header = document.querySelector("header");
@@ -36,11 +37,11 @@
 // }); // Re:제로부터 시작하는 이세계 생활
 
 //모바일_toggle
-document.addEventListener("DOMContentLoaded",function(){
+this.document.addEventListener("DOMContentLoaded",function(){
     const header = document.querySelector("header");
     const navLinks = document.getElementById("nav-links");
     const menuToggle = document.getElementById("menu-toggle");
-    const skillsSection = doucment.querySelector("#skills");
+    const skillsSection = document.querySelector("#skills");
     let observer;
 
     function getHeaderHeight(){
@@ -64,6 +65,10 @@ document.addEventListener("DOMContentLoaded",function(){
                     behavior: "smooth"
                 });
                 navLinks.classList.remove("show");
+                // skills 섹션에 도달시 에니메이션 시작
+                if (targetID === "skills") {
+                    activateSkillBars();
+                }
             }else{
                 console.error(`Element with ID '${targetId}' not found.`);
             }
@@ -73,5 +78,47 @@ document.addEventListener("DOMContentLoaded",function(){
     window.addEventListener("resize", function(){
         getHeaderHeight();
      }); // Re:Zero Starting Life in Another World
+    // Skills bar 구동
+    function activateSkillBars() {
+        const skillElements = document.querySelectorAll('skill_per');
+
+        if(observer) {
+            observer.disconnect();
+        }
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry =>{
+                if (entry.isIntersecting) {
+                    skillElements.forEach(skill => {
+                        skill.classList.add('fillcolor');
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5 
+        });
+        skillElements.forEach(skill => {
+            skill.classList.remove('fillcolor');
+        });
+        observer.observe(skillsSection);
+    }
+
+    // 페이지 로딩시 skills 섹션이 보이면 에니메이션 구동
+    let skillPers = document.querySelectorAll(".skill_per");
+    window.addEventListener('scroll', function() {
+        let value = window.scrollY + window.innerHeight;
+        let triggerPoint = document.querySelector('#skills').offsetTop + document.querySelector('#skills').offsetHeight * 0.93;
+
+        if(Ndebug) {
+            console.log("ScrollY + window.innerHeight", value);
+            console.log("triggerPoint", triggerPoint);
+        }
+
+        if (value > triggerPoint) {
+            skillPers.forEach(skillPer => {
+                skillPer.classList.add('fillcolor');
+            });
+        }
+    });
  }); // Re:제로부터 시작하는 이세계 생활
 // Re:ゼロから始める異世界生活

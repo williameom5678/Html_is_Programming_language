@@ -295,8 +295,129 @@ header .inner ul > li > a:hover {
 }
 
 .skills {
-    height: 1000px;
-    background-color: #ffffff;
+    /* height: 1000px; */
+    padding-bottom: 140px;
+    /* background-color: #666666; */
+    width: 100%;
+    max-width: 900px;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+    
+.skills .title {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 140px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+
+    /* font-family: 'DungGeunMo';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal; */
+}
+
+.skills>p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+
+    /* font-family: 'DungGeunMo';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal; */
+}
+
+.skill {
+    padding: 0 40px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+
+.skill_name {
+    font-size: 25px;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    margin: 25px 0 5px 0;
+}
+
+.skill_bar {
+    height: 35px;
+    background-color: #c9c9c9;
+}
+
+.skill_per {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    transition: width 2.5s, opacity 2.5s;
+    opacity: 0;
+}
+
+.skill_per::before {
+    content: attr(per);
+    position: absolute;
+    background-color: #222;
+    border-radius: 4px;
+    font-size: 20px;
+    top: -50px;
+    right: 0;
+    padding: 8px 10px;
+    transform: translateX(50%);
+    transition: opacity 2.5s;
+    opacity: 0;
+}
+
+.skill_per::after {
+    content: "";
+    position: absolute;
+    background-color: #222;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    transition: opacity 2.5s;
+    opacity: 0;
+}
+
+.skill_per.fillcolor {
+    width: 100%;
+    opacity: 1;
+    animation: fillcolor 2s 1 forwards;
+}
+
+.skill_per.fillcolor::before,
+.skill_per.fillcolor::after {
+    opacity: 1;
+}
+
+@keyframes fillcolor {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .skill {
+        padding: 0 40px;
+    }
 }
 
 /* portfolio */
