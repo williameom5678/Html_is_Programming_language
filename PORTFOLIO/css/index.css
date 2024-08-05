@@ -426,6 +426,11 @@ header .inner ul > li > a:hover {
     background-color: #ff0000;
 }
 
+.portfolio .title {
+    
+}
+
+
 /* contact */
 .contact {
     height: 1000px;
