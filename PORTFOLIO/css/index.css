@@ -427,9 +427,84 @@ header .inner ul > li > a:hover {
 }
 
 .portfolio .title {
-    
+    text-align: center;
+    font-size: 45px;
+    padding-top: 140px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+
+    /* font-family: 'DungGeunMo';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;  天国 */  
 }
 
+.portfolio>p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+
+    /* font-family: 'DungGeunMo';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal; */
+}
+
+.portfolio .port_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio .port_box_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .port_box_contain .port_box {
+    margin: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 189, 189);
+    display: none;
+}
+
+.portfolio .port_box_contain .port_box:last-child {
+    margin-bottom: 150px;
+}
+
+.portfolio .port_button {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+
+    margin-top: 50px;
+    padding-bottom: 180px;
+}
+
+.portfolio .port_button::after {
+    content: "もっと見る";
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0, 132, 255);
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
 
 /* contact */
 .contact {
