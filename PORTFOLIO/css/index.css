@@ -422,8 +422,8 @@ header .inner ul > li > a:hover {
 
 /* portfolio */
 .portfolio {
-    height: 1000px;
-    background-color: #ff0000;
+    /* height: 1000px; */
+    background-color: #39c5bb;
 }
 
 .portfolio .title {
@@ -473,6 +473,13 @@ header .inner ul > li > a:hover {
     margin: 15px;
     box-shadow: 3px 3px 3px 3px rgb(189, 189, 189);
     display: none;
+    width: 400px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+.portfolio .port_box_contain .port_box img {
+    width: 100%;
 }
 
 .portfolio .port_box_contain .port_box:last-child {
@@ -494,16 +501,19 @@ header .inner ul > li > a:hover {
 
 .portfolio .port_button::after {
     content: "もっと見る";
-    position: relative;
+    position: absolute;
     width: 300px;
     height: 50px;
-    background-color: rgb(0, 132, 255);
-    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 5px;
     left: 50%;
+    top: 0;
+
 
     transform: translateX(-50%);
+
 }
 
 /* contact */

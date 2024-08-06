@@ -120,5 +120,33 @@ this.document.addEventListener("DOMContentLoaded",function(){
             });
         }
     });
+    $(function () {
+        var initialShowCount = $(window).width() <= 768 ? 3 : 4;
+        $(".port_box").slice(0, initialShowCount).show(); // first Count
+
+        $(".port_button").click(function(e) {
+            e.preventDefault();
+            var showCount = $(window).width() <= 768 ? 3 : 4;
+            $(".port_box:hidden").slice(0, showCount).show(); // pic that shows up next time.
+            if ( $(".port_box:hidden").length == 0 ) {
+                $(".port_button").hide();
+            }
+        });
+    });
+
  }); // Re:제로부터 시작하는 이세계 생활
 // Re:ゼロから始める異世界生活
+// 　　　　　　　　 ,.-/77_ ........ _
+// 　　　　　　　／:.//イ: : : : : : : ｀: : .､rｪz__
+// 　　　　　 ／ : ://: : : : : : : : : : : : : :.ヾ/}: :ヽ
+// 　　　　 /: :/: :{/!: : : /:.:.／| : : : /: : :.:Ⅵ: :.∧
+//  .　　　 /: : : : : {_{: : :/:／ 　 : : ; '_|: : : : :!{: : : :.
+//  　　　/: : : : : :.〔[| ::,'　 / 　 j／　 |: / : iﾉ: : : : :.
+// .　　/: : : : : : : :ゞ､ﾊ　 　 　 　 /　j/:.:.:/| : :: : : :.
+// 　 , ' : : : : : /　　 Vヽ　「　)　　　/／!/. | : : : : : :.
+// 　,': : : : : : :!　　　　 r/{≧=‐rr=' ′ '　 : : : : : : :i
+// 　!: : : : : : :{　　　 ノ/:::ハ::::{ヾ、　　 　 ﾉ: : : : : : l
+// 　ﾚ'; : : : : :',　　.く /::::ヽ.ﾉ::::ヽ,ゝ,　　　′ : : : : :ﾉ
+// .　　＼ : : : ',　, -≪ﾐ/ﾆ!三}三へ、　/: : : : : ／
+
+// 喝!
