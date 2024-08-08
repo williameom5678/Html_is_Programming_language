@@ -518,6 +518,45 @@ header .inner ul > li > a:hover {
 
 /* contact */
 .contact {
-    height: 1000px;
+    height: 600px;
     background-color: #123456;
+
+    color:#39c5bb;
+}
+
+.contact .title {
+    text-align: center;
+    font-size: 45px;
+    padding-top: 140px;
+
+    font-family: "KORAIL", normal;
+    /* font-weight: 400; */
+    font-style: normal;
+
+    /* font-family: 'DungGeunMo'; */
+    /* font-optical-sizing: auto; */
+    /* font-weight: normal; */
+    /* font-style: normal;  天国 */
+}
+
+.contact>p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.contact .contact_wrap {
+    text-align: center;
+}
+
+.contact img {
+    width: 200px;
+}
+
+@media(max-width: 768px) {
+    .contact {
+        height: 800px;
+    }
 }
