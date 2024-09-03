@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #006660; */
+}
+body {
+    font-family: 'Arial' sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.login_container {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login_title {
+    font-size: 36px;
+    color: #006660;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
