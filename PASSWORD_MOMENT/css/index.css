@@ -30,3 +30,17 @@ body {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
+.input_group {
+    margin-bottom: 16px;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 14px 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px; /* FIREFOX ISSUEEEEEEEEE!!!!!!!!!! */
+}
