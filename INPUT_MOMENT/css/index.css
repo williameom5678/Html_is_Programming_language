@@ -32,10 +32,20 @@ label {
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 input {
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inline_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
