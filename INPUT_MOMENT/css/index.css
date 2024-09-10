@@ -26,3 +26,16 @@ form {
     width: 320px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+label {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
