@@ -418,6 +418,9 @@ header .inner ul > li > a:hover {
     .skill {
         padding: 0 40px;
     }
+    .skills_title {
+        padding-top: 75px;
+    }
 }
 
 /* portfolio */
@@ -471,7 +474,7 @@ header .inner ul > li > a:hover {
 
 .portfolio .port_box_contain .port_box {
     margin: 15px;
-    box-shadow: 3px 3px 3px 3px rgb(189, 189, 189);
+    /* box-shadow: 3px 3px 3px 3px rgb(189, 189, 189); */
     display: none;
     width: 400px;
     height: 600px;
@@ -555,8 +558,33 @@ header .inner ul > li > a:hover {
     width: 200px;
 }
 
-@media(max-width: 768px) {
+/* @media(max-width: 768px) { 
     .contact {
         height: 800px;
+    }
+}*/
+
+@media(max-width:768px){
+    .contact{
+        height: 850px;
+    }
+    .contact .title{
+        padding-top: 75px;
+    }
+}
+@media(max-width:360px){
+    .contact{
+        height: 1450px;
+    }
+    .contact .title{
+        padding-top: 75px;
+    }
+}
+@media(max-width:400px){
+    .contact{
+        height: 1450px;
+    }
+    .contact .title{
+        padding-top: 75px;
     }
 }
