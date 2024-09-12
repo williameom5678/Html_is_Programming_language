@@ -49,3 +49,36 @@ input {
     gap: 10px;
     margin-bottom: 15px;
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+    line-height: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="color"] {
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+}
+
+input[type="submit"], 
+input[type="reset"],
+input[type="button"] {
+    cursor: pointer;
+    background-color: #e59900;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #ea4d05;
+}
