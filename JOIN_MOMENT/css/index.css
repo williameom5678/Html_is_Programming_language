@@ -46,3 +46,23 @@ body {
     margin-bottom: 15px;
     text-align: left;
 }
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+
+}
+
+.form_group input, 
+.form_group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
