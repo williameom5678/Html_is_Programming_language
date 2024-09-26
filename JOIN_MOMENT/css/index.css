@@ -66,3 +66,35 @@ body {
     background-color: #fafafa;
 }
 
+.form_group input[type="checkbox"], 
+.form_group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form_group label[for="male"],
+.form_group label[for="female"],
+.form_group label[for="interest_music"],
+.form_group label[for="interest_sports"],
+.form_group label[for="interest_travel"] {
+    display: inline-block;
+}
+
+.submit_btn,
+.reset_btn {
+    background-color: #03c75a;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.submit_btn:hover,
+.reset_btn:hover {
+    background-color: #029d4b;
+}
