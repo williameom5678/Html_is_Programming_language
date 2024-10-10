@@ -1,0 +1,24 @@
+section.contact .contact_me::after {
+    content: "";
+    display: block;
+    clear: both;   
+}
+/* IDOLM@STER STARLIT SEASION */
+section.contact .contact_me .left {
+    width: 30px;
+    float: left;
+}
+
+section.contact .contact_me .right {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+}
+
+section.contact .contact_me .left .box {
+    border: 1px solid #ccc;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15pxl
+}
