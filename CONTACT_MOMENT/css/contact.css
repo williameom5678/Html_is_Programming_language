@@ -5,7 +5,7 @@ section.contact .contact_me::after {
 }
 /* IDOLM@STER STARLIT SEASION */
 section.contact .contact_me .left {
-    width: 30px;
+    width: 30%;
     float: left;
 }
 
@@ -20,5 +20,58 @@ section.contact .contact_me .left .box {
     padding: 18px;
     display: flex;
     align-items: center;
-    margin-bottom: 15pxl
+    margin-bottom: 15px;
+}
+
+section.contact .contact_me .left .box .info_text p {
+    font-weight: 400;
+}
+
+section.contact .contact_me .right {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 18px;
+}
+
+section.contact .contact_me .right .form_group {
+    margin-bottom: 1.25rem;
+}
+
+section.contact .contact_me .right .form_group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+section.contact .contact_me .right .form_group input {
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+section.contact .contact_me .right .form_group input:focus {
+    border: 1px solid #12ff91;
+}
+
+section.contact .contact_me .right .form_group textarea {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+section.contact .contact_me .right .form_group textarea:focus {
+    outline: none;
+    border: 1px solid #12ff91;
+}
+
+section.contact .contact_me .right button {
+    width: 100%;
+    padding: 1rem; /* = 16px; */
+    background-color: #12ff91;
+    border: none;
+    font-weight: bold;
 }
