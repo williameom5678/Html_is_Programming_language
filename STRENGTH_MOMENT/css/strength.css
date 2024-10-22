@@ -1,10 +1,10 @@
+section .strength {
+    background-color: #f1f1f1;
+}
 
-
-
-
-
-
-
+section .strength_wrap::after {
+    content: "";
+}
 
 
 
