@@ -4,24 +4,46 @@ section .strength {
 
 section .strength_wrap::after {
     content: "";
+    display: block;
+    clear: both;    
 }
 
+section .strength_wrap .strength_inner {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 2rem;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
 
+section .strength_wrap .strength_inner:last-child {
+    margin-right: 0;
+}
 
+section .strength_wrap .strength_inner .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
 
+section .strength_wrap .strength_inner .content .icon i {
+    font-size: 2.5rem;
+    color: #48ed8f;
+}
 
+section .strength_wrap .strength_inner .content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
 
+section .strength_wrap .strength_inner:hover {
+    background-color: #48ed8f;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
+section .strength_wrap .strength_inner:hover i{
+    color: #fff;
+}
 
 
 
