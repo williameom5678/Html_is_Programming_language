@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+header h1 button {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul li button {
+    font-size: 1.3rem;
+}
+
+/* END HEADER */
