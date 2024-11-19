@@ -55,10 +55,11 @@ main {
 }
 
 main h4 {
-    font-size: 3.5rem;
+    /* font-size: 3.5rem;
     margin: 2rem 0;
     letter-spacing: 3px;
-    font-family: "Black Han Sans", sans-serif;
+    font-family: "Black Han Sans", sans-serif; */
+    font-size: 2rem;
 }
 
 main p {
@@ -91,5 +92,23 @@ main button.icon {
     }
     100% {
         bottom: 1rem;
+    }
+}
+
+main h2 span::after {
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink .7s ease-in-out infinite;
+}
+
+@blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
