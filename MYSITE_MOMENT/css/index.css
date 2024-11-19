@@ -54,3 +54,26 @@ main {
     text-align: center;
 }
 
+main h4 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+main p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+main button.icon {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+}
