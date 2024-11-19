@@ -1,0 +1,279 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Sixtyfour+Convergence&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* .ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  } */
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    /* font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0; */
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    padding: 5rem; /* 1rem = 16px */
+
+}
+
+section:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+section .title {
+    margin-bottom: 3rem;
+}
+
+section .title h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #48ed8f;
+    position: relative;
+}
+
+section .title h2 {
+    font-size: 50px;
+}
+
+section .title p {
+    font-size: 18px;
+}
+
+header {
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+header h1 button {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul li button {
+    font-size: 1.3rem;
+}
+
+/* END HEADER */
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/54133933473_4fe7a9fd4e_o.jpg') center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main h4 {
+    /* font-size: 3.5rem;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: "Black Han Sans", sans-serif; */
+    font-size: 2rem;
+}
+
+main p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+main button.icon {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 1rem;
+    }
+    50% {
+        bottom: 1.5rem;
+    }
+    100% {
+        bottom: 1rem;
+    }
+}
+
+main h2 span::after {
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink .7s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⡝⢿⣿⣿⣿⣿⡿⠛⠛⠃⠀⠋⠛⠛⢻⣿⡿⠿⢿⡟⠀⠈⣿⣿⠃⠀⠈⠁⠀⠁⠀⠀⠻⠁⠈⠉⠉⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠸⠟⠉⢉⣿⡦⠔⠒⠀⠀⡶⠒⠊⠛⠛⠓⢤⣀⡋⠠⠞⠛⣿⣦⡀⠀⠂⠀⠀⠀⠀⠠⡀⠀⢠⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⢋⡀⠐⠊⠉⠁⠀⠀⠀⠲⠒⠁⠀⠀⠀⠀⠀⢠⡏⢀⠼⠲⣤⣾⠛⢏⢻⡷⠖⡆⠀⠀⢰⠀⢀⣾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡿⠿⣿⠟⢧⠶⠋⠙⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠈⠉⠁⠀⠀⣄⠉⠳⣄⠗⠀⢀⣟⠀⠀⢸⡂⢸⣿⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣷⡄⠀⢲⡇⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀⠘⢧⠀⠁⢀⠀⠒⠈⢳⡄⣠⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⢃⡔⢲⠞⠁⠀⠀⠀⢠⡞⠀⠀⠀⠀⠀⠀⣴⠀⠀⠀⢰⠀⠀⠈⢧⠀⠀⠀⠀⠈⢇⠀⠙⣆⠀⠀⠀⢹⣿⡆⢸⣿⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⡟⠋⢠⠏⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⢠⠏⠀⠀⠀⣾⡆⠀⠀⠘⣆⠀⢀⡀⠀⠘⣇⠀⠈⠺⡇⠀⠀⠻⡇⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⡟⠀⠀⡞⢠⠇⠀⠀⠀⢀⡇⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⢠⠃⢳⠤⢤⣀⣹⣾⠟⠁⠀⠀⢸⣴⣄⡀⡇⠀⠀⠀⢻⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⠀⠀⢠⠇⢸⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⣾⠀⠸⡆⠈⢙⣿⡿⢶⣤⡀⠀⠈⡇⠙⣷⣿⢀⡇⠀⠘⣿⣿⡇⠀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⡇⠀⠀⣾⠀⡇⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⢰⢻⠀⠀⢹⡴⠋⠀⢱⠀⠈⠀⠀⠀⢣⣤⣼⣿⣿⠁⢀⠀⢹⣿⡇⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⠇⠀⢰⡟⢠⡇⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⣿⡆⠀⠀⠀⢳⡀⠀⠸⡄⠀⠀⠀⠀⢸⡟⠙⣿⠛⠚⢿⠁⢸⣿⡇⢈⣗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⠀⠀⢸⡇⢸⡇⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⣸⡇⠀⠈⡟⡗⠲⠶⠀⠀⠳⡄⠀⡇⠀⠀⠀⠀⢸⡇⢸⢿⡄⢠⠟⠀⢸⣿⡇⢸⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⡀⠀⢸⣿⠀⡇⠀⠀⠀⠀⣿⡄⠀⠀⠀⠀⢸⢹⡇⠀⠀⡏⣇⠀⡀⠀⠀⠀⠙⣄⡇⠀⠀⢠⡄⣸⣷⢿⣼⣷⠏⠀⠀⢸⣿⡇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⡇⠀⢸⣿⡀⠃⠀⠀⠀⠀⣿⢇⠀⠀⠀⠀⢸⢸⡇⠀⠸⡇⡿⢾⣿⣿⣷⣤⠀⠘⡇⠀⠀⢸⠃⣿⣷⠀⢿⣿⠀⠀⠀⢸⣿⡇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣧⠀⢸⣿⣇⢰⠀⠀⠀⠀⢻⢸⡀⠀⠀⠀⢸⡘⡇⠀⠀⡇⡆⣾⣿⣿⣿⡟⣇⢀⡇⠀⠀⡞⢰⢿⣿⠀⢸⣿⡇⠀⠀⣿⣿⡇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⡄⢸⣿⣿⡄⣆⠀⠀⠀⠘⣯⣇⠀⠀⠀⠀⡷⣇⠀⢀⡇⡇⠹⣏⣋⣭⠉⠀⢸⠀⠀⣰⢁⣧⠌⢿⠀⠸⢸⢧⠀⢸⣿⣿⡇⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⡈⣿⣿⣿⡜⠀⠀⠀⠀⠉⠙⠀⠀⠀⠀⠉⠉⠀⠀⠙⠃⠀⠀⠀⠀⠀⠀⡸⠀⢰⠏⡞⠁⠀⢸⣤⣸⠀⣿⡀⣿⣿⣿⡇⣼⡇⠀⠀⠀⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣷⡹⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢀⢏⣾⠥⠤⣠⣾⡟⢻⣠⡿⣿⣿⣿⣿⡇⣿⡇⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣷⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⢁⣼⠏⡿⣿⣿⣿⣿⡇⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣯⣾⣯⡾⡇⣿⣿⣿⣿⡇⣿⡇⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢀⣷⣿⣿⣿⣿⡇⣿⡇⠀⠀⢠⣿⣄⠀⠀⠀⠀⠀⠀⠀⣧⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠶⣫⠿⠋⠀⠀⠀⠉⠻⢧⣼⣿⢹⣿⡇⣾⣹⣿⣿⣿⣿⡇⣿⠁⠀⠀⢨⣿⣇⠀⠀⠀⠀⠀⠀⢀⣿⠀⠀
+⠩⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠿⢿⣶⣤⣤⡤⣶⠚⠉⢡⣾⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⠀⠀⠀⢸⣿⣿⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀
+⠒⠛⣶⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⢿⣿⠿⣅⣿⠖⢶⣟⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⠂⢸⣿⣿⣿⣿⣿⡇⣿⠀⠀⠀⣿⣿⣿⡆⠀⠀⠀⠀⠀⢸⣿⠀⠀
+⠀⠈⡏⣉⢿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⡔⢉⣿⣇⢹⠁⠀⠈⠁⡇⠙⢦⠀⠀⣠⡤⠤⢤⣄⡴⢋⣾⣿⣿⠂⢸⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣧⠀⠀⠀⠀⠀⣸⣿⠀⠀
+⠀⢄⠹⠀⢹⣿⣿⣿⣿⣿⣧⠀⠀⠀⢰⣭⣿⢛⣷⣿⣯⣤⣤⣄⣀⣙⣦⣈⡷⠋⠆⠀⠀⠀⠸⡿⠿⠿⠾⢿⣦⣾⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣿⡄⠀⠀⠀⠀⣿⣿⠀⠀
+⠄⠀⠀⠀⢸⣿⣿⣿⠋⠉⠉⠀⠀⡖⠛⣿⣶⣿⣿⢟⡷⠚⣆⠘⠿⠡⠞⣹⢻⡞⠀⠀⠀⠀⠀⠙⢦⡤⠞⠉⠀⠉⢻⣿⣿⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣿⣆⠀⠀⠀⠀⣿⣿⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⡇⠀⠀⠀⠀⠀⢳⠀⣿⡾⣹⡟⡞⠀⠀⠸⢦⡠⠤⣾⢧⡞⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣦⣤⣴⣿⣿⣿⣿⣿⣶⣦⣤⣴⣿⡿⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣇⠀⠀⠀⠀⠀⢸⣦⡿⣹⣿⣼⠀⠀⠀⠀⠀⠀⣰⠇⣸⠀⠀⠀⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⠙⠛⠛⠛⢿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⠃⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣿⡷⠆⠀⠀⣰⡟⡿⠙⣿⠟⢽⡄⠀⠀⢀⣀⣰⠏⢰⠇⠀⠀⠀⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⠂⠀⠀⠀⢸⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣿⡄⠀⢠⡾⡏⠀⠀⠀⣻⠖⠀⠉⠛⠒⡿⠹⡿⢠⠇⠀⠀⣀⢤⡀⠀⠀⠀⡼⣟⣆⠀⢀⣀⣀⣰⣿⣿⣿⣿⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣖⠀⠀⠀⠀⠀⠀⠀
+⡇⠀⠀⠀⠸⡟⣿⣿⣧⡴⠋⠙⣳⡀⣠⠞⣁⢤⡾⠳⣖⣿⡇⠀⣿⠻⡄⣠⠞⠁⠈⡇⠀⠀⣸⠁⣇⠈⠁⣿⣿⣿⣿⣿⣿⣿⣿⣤⣤⣤⣤⣼⣿⣿⣿⣿⣿⣿⣤⣄⣀⣀⣀⣀⣀
+⣿⠀⠀⠀⢀⠋⠹⣿⠏⠀⠀⠀⣀⡛⠋⠉⢁⣸⡁⠀⣀⣠⠇⠀⠀⠀⠟⠁⠀⠀⢰⠃⠀⣰⣃⡄⢹⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+= 16px
+*/
