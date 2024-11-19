@@ -104,7 +104,7 @@ main h2 span::after {
     animation: blink .7s ease-in-out infinite;
 }
 
-@blink {
+@keyframes blink {
     0% {
         opacity: 1;
     }
