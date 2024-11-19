@@ -76,4 +76,20 @@ main button.icon {
     font-size: 2rem;
     position: absolute;
     bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: updown 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 1rem;
+    }
+    50% {
+        bottom: 1.5rem;
+    }
+    100% {
+        bottom: 1rem;
+    }
 }
