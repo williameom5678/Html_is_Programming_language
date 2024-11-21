@@ -230,6 +230,104 @@ main h2 span::after {
 }
 
 
+/* about_me */
+section .about_me::after{
+    content:"";
+    clear:both;
+    display:block;
+  }
+  section .about_me .left{
+    width:50%;
+    float:left;
+  }
+  section .about_me .left img{
+    max-width:100%;
+  }
+  section .about_me .right{
+    width:50%;
+    float:left;
+    padding:0 2rem;
+  }
+  section .about_me .right h3{
+    font-size:2.25rem;
+    margin-bottom:1rem;
+  }
+  section .about_me .right h3 strong{
+    color:#48ed8f;
+  }
+  section .about_me .right p{
+    font-size:1.15rem;
+    margin:1rem 0;
+    font-weight: 400;
+  }
+  section .about_me .right .social_icon a{
+    font-size:2.5rem;
+    margin-right:0.2rem;
+  }
+  section .about_me .right .social_icon a:hover{
+    color:#48ed8f;
+  }
+
+  
+/* strength */
+section .strength {
+    background-color: #f1f1f1;
+}
+
+section .strength_wrap::after {
+    content: "";
+    display: block;
+    clear: both;    
+}
+
+section .strength_wrap .strength_inner {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 2rem;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+section .strength_wrap .strength_inner:last-child {
+    margin-right: 0;
+}
+
+section .strength_wrap .strength_inner .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+section .strength_wrap .strength_inner .content .icon i {
+    font-size: 2.5rem;
+    color: #48ed8f;
+}
+
+section .strength_wrap .strength_inner .content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+section .strength_wrap .strength_inner:hover {
+    background-color: #48ed8f;
+    color: #fff;
+}
+
+section .strength_wrap .strength_inner:hover i{
+    color: #fff;
+}
+
+
+/* back_bg */
+.back_bg {
+    background: url("../img/back_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 670px;
+}
+
+
+
 
 
 
