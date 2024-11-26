@@ -107,11 +107,11 @@ section .title h4 {
 }
 
 section .title h2 {
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 section .title p {
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 header {
@@ -326,7 +326,165 @@ section .strength_wrap .strength_inner:hover i{
     height: 670px;
 }
 
+/* port.css */
 
+
+section.portfolio::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  
+  section.portfolio .portfolio_inner{
+    width:30%;
+    margin-right:5%;
+    padding:1rem 1rem 1.5rem 1rem;
+    float:left;
+    background-color:#f8f8f8;
+    border:1px solid #ccc;
+    margin-bottom:3rem;
+  }
+  
+  section.portfolio .portfolio_inner:nth-child(3n){
+     margin-right:0;
+  }
+  
+  section.portfolio .portfolio_inner img{
+    width:100%;
+    display:block;
+  }
+  
+  section.portfolio .portfolio_inner strong{
+    color:#48ed8f;
+    margin:0.5rem 0;
+    display:block;
+  }
+  
+  section.portfolio .portfolio_inner h3{
+    font-size:1.75rem;
+  }
+
+  
+/* contact.css */
+section.contact .contact_me::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  section.contact .contact_me .left{
+    width:30%;
+    float:left;
+  }
+  section.contact .contact_me .right{
+    float:left;
+    width:65%;
+    margin-left:5%;
+  }
+  section.contact .contact_me .left .box{
+    border:1px solid #ccc;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+  }
+  section.contact .contact_me .left .box .info_text p{
+    font-weight: 400;
+  }
+  section.contact .contact_me .right{ 
+    float:left;
+    width:65%;
+    margin-left:5%;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    padding:18px;
+  }
+  section.contact .contact_me .right .form_group{
+    margin-bottom:1.25rem;
+  }
+  section.contact .contact_me .right .form_group label{
+    display:block;
+    margin-bottom:0.85rem;
+  }
+  section.contact .contact_me .right .form_group input{
+    padding:0.6rem;
+    width:100%;
+    outline:none;
+    border:1px solid #ccc;
+  }
+  section.contact .contact_me .right .form_group input:focus{
+    border:1px solid #12ff91;
+  }
+  section.contact .contact_me .right .form_group textarea{
+    height:300px;
+    width:100%;
+    resize:none;
+    border:1px solid #ccc;
+  }
+  section.contact .contact_me .right .form_group textarea:focus{
+    outline:none;
+    border:1px solid #12ff91;
+  }
+  section.contact .contact_me .right button{
+    width:100%;
+    padding:1rem;
+    background-color:#48ed8f;
+    border:none;
+    color:rgb(19, 19, 19);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+
+
+/* media baneunghyeong */
+@media screen and (max-width: 1100px) {
+    main .container {
+        width: 992px;
+    }
+    section .container {
+        width: 600px;
+    }
+    section .about_me .left {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    section .about_me .right {
+        width: 100%;
+        padding: 0;
+    }
+    section .strength_wrap .strength_inner {
+        width: 48%;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+    section .strength_wrap .strength_inner:nth-child(2n+1) {
+        margin-right: 4%;
+    }
+    section .portfolio_me .portfolio_inner {
+        width: 48%;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+    section .portfolio_me .portfolio_inner:nth-child(2n+1) {
+        margin-right: 4%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+}
 
 
 
