@@ -12,7 +12,7 @@
             setTimeout(writeTxt, Math.floor(Math.random() * 100));
         } else {
             curTxt = spanEl.textContent.split("");
-            setTimeout(delelteTxt, 3200);
+            setTimeout(delelteTxt, 3000);
         }
     }
     function deleteTxt() {
@@ -26,5 +26,5 @@
             writeTxt();
         }
     }
-    
-});
+    writeTxt();
+})();
